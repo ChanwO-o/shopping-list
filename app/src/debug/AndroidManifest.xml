@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.androiddevs.shoppinglisttestingyt">
+
+    <application>
+        <activity android:name=".HiltTestActivity"
+            android:exported="false" /> <!-- exported="false": prevents activity from being shown outside this package (is a test activity) -->
+    </application>
+
+</manifest>
