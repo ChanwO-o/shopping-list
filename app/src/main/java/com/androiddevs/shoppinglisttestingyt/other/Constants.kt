@@ -10,4 +10,6 @@ object Constants {
 
     const val MAX_NAME_LENGTH = 20 // max shopping item name length
     const val MAX_PRICE_LENGTH = 10 // digits of price at most
+
+    const val GRID_SPAN_COUNT = 4
 }
