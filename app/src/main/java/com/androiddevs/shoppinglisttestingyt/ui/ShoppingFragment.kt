@@ -20,6 +20,9 @@ import javax.inject.Inject
 /**
  * In real fragment: ViewModel will be created via ViewModelProvider in onViewCreated()
  * In test fragment: ViewModel will be injected through constructor
+ *
+ * If we assign VM as a member variable in our test case, the real ShoppingViewModel would’ve already subscribed to changes of the real LiveData objects
+ * This wouldn’t work because we don’t use a real repository in our test cases
  */
 class ShoppingFragment @Inject constructor(
     val shoppingItemAdapter: ShoppingItemAdapter,
